@@ -31,7 +31,7 @@ const SingleServicesPage = () => {
 
 useEffect(() => {
 	if (!isMounted) {
-		axios.get('http://webbew.webbew.in/wp-json/wp/v2/service')
+		axios.get('https://webbew.webbew.in/wp-json/wp/v2/service')
 		  .then(function (response) {
 			Object.keys(response.data).map(function(key, index) {
 				if (response.data[index].id == id) {

@@ -9,7 +9,7 @@ const Service = () => {
   const [getData, setData] = useState({});
 
   useEffect(() => {
-    axios.get('http://webbew.webbew.in/wp-json/wp/v2/service')
+    axios.get('https://webbew.webbew.in/wp-json/wp/v2/service')
       .then(function (response) {
         setData(response.data)
       })
